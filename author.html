@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autorin – Schultypografie</title><!-- Ghost: {{meta_title}} -->
+  <link rel="stylesheet" href="/src/css/app.css" />
+</head>
+<body>
+
+  <!-- Ghost: {{> header}} -->
+  <header>
+    <nav>
+      <a href="/">Schultypografie</a>
+    </nav>
+  </header>
+
+  <!-- Ghost: {{#author}} -->
+  <main>
+    <header>
+      <!-- Ghost: {{#if profile_image}}<img src="{{profile_image}}">{{/if}} -->
+      <img src="https://placehold.co/96x96" alt="Profilbild" />
+      <h1>Name der Autorin</h1><!-- Ghost: {{name}} -->
+      <p>Bio der Autorin</p><!-- Ghost: {{bio}} -->
+    </header>
+
+    <!-- Ghost: {{#foreach posts}} -->
+    <div>
+      <article>
+        <h2><a href="/post.html">Artikeltitel</a></h2>
+        <time>10. März 2026</time>
+        <p>Kurze Zusammenfassung...</p>
+      </article>
+    </div>
+    <!-- Ghost: {{/foreach}} -->
+
+    <!-- Ghost: {{pagination}} -->
+    <nav aria-label="Seitennavigation">
+      <a href="#">← Ältere Beiträge</a>
+    </nav>
+  </main>
+  <!-- Ghost: {{/author}} -->
+
+  <!-- Ghost: {{> footer}} -->
+  <footer>
+    <p>© 2026 Schultypografie</p>
+  </footer>
+
+  <!-- Ghost: {{ghost_foot}} -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

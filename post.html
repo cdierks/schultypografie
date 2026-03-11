@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artikeltitel – Schultypografie</title><!-- Ghost: {{meta_title}} -->
+  <link rel="stylesheet" href="/src/css/app.css" />
+</head>
+<body>
+
+  <!-- Ghost: {{> header}} -->
+  <header>
+    <nav>
+      <a href="/">Schultypografie</a>
+    </nav>
+  </header>
+
+  <!-- Ghost: {{#post}} -->
+  <main>
+    <article>
+      <header>
+        <!-- Ghost: {{#foreach tags}}<a href="{{url}}">{{name}}</a>{{/foreach}} -->
+        <a href="/tag.html">Typografie</a>
+
+        <h1>Artikeltitel</h1><!-- Ghost: {{title}} -->
+
+        <div>
+          <!-- Ghost: {{> author_card}} -->
+          <span>Autorin</span><!-- Ghost: {{primary_author.name}} -->
+          <time>10. März 2026</time><!-- Ghost: {{published_at format="DD. MMMM YYYY"}} -->
+          <span>5 Min. Lesezeit</span><!-- Ghost: {{reading_time}} -->
+        </div>
+
+        <!-- Ghost: {{#if feature_image}} -->
+        <img src="https://placehold.co/1200x600" alt="Titelbild" /><!-- Ghost: {{feature_image}} -->
+        <!-- Ghost: {{/if}} -->
+      </header>
+
+      <!-- Ghost: {{content}} -->
+      <div class="gh-content">
+        <p>Hier beginnt der Artikeltext. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>Zwischenüberschrift</h2>
+        <p>Weiterer Absatz mit mehr Inhalt.</p>
+      </div>
+    </article>
+
+    <!-- Ghost: {{> post_card}} für ähnliche Artikel -->
+    <aside>
+      <h2>Weitere Artikel</h2>
+    </aside>
+  </main>
+  <!-- Ghost: {{/post}} -->
+
+  <!-- Ghost: {{> footer}} -->
+  <footer>
+    <p>© 2026 Schultypografie</p>
+  </footer>
+
+  <!-- Ghost: {{ghost_foot}} -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
