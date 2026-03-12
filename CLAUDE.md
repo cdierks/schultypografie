@@ -25,17 +25,19 @@ npm run preview      # Build lokal vorschauen
 
 ## Ghost-Template-Mapping
 
-| HTML-Datei     | Ghost-Template  | Zweck                        |
-|---------------|-----------------|------------------------------|
-| `index.html`  | `index.hbs`     | Blog-Startseite (Post-Liste) |
-| `post.html`   | `post.hbs`      | Einzelner Artikel            |
-| `page.html`   | `page.hbs`      | Statische Seite              |
-| `tag.html`    | `tag.hbs`       | Tag-Archiv                   |
-| `author.html` | `author.hbs`    | Autoren-Seite                |
+| HTML-Datei    | Ghost-Template | Zweck                        |
+| ------------- | -------------- | ---------------------------- |
+| `index.html`  | `index.hbs`    | Blog-Startseite (Post-Liste) |
+| `post.html`   | `post.hbs`     | Einzelner Artikel            |
+| `page.html`   | `page.hbs`     | Statische Seite              |
+| `tag.html`    | `tag.hbs`      | Tag-Archiv                   |
+| `author.html` | `author.hbs`   | Autoren-Seite                |
 
 Ghost-Handlebars-Entsprechungen sind als HTML-Kommentare inline dokumentiert, z.B.:
+
 ```html
-<h1>Artikeltitel</h1><!-- Ghost: {{title}} -->
+<h1>Artikeltitel</h1>
+<!-- Ghost: {{title}} -->
 ```
 
 ## Ghost-Portierung (Hinweise)

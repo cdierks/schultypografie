@@ -1,52 +1,63 @@
 <!doctype html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Schultypografie</title>
+    <!-- Ghost: {{ghost_head}} -->
+    <link
+      rel="stylesheet"
+      href="/src/css/app.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Schultypografie</title><!-- Ghost: {{ghost_head}} -->
-  <link rel="stylesheet" href="/src/css/app.css" />
-</head>
+  <body>
+    <!-- Ghost: {{> header}} -->
+    <header>
+      <nav>
+        <a href="/">Schultypografie</a>
+      </nav>
+    </header>
 
-<body>
+    <!-- Ghost: {{#foreach posts}} -->
+    <main>
+      <article>
+        <!-- Ghost: {{#if feature_image}}<img src="{{feature_image}}">{{/if}} -->
+        <h2><a href="/post.html">Titel des Artikels</a></h2>
+        <!-- Ghost: {{title}} -->
+        <time>10. März 2026</time
+        ><!-- Ghost: {{published_at format="DD. MMMM YYYY"}} -->
+        <p>Kurze Zusammenfassung des Artikels...</p>
+        <!-- Ghost: {{excerpt words="30"}} -->
+      </article>
 
-  <!-- Ghost: {{> header}} -->
-  <header>
-    <nav>
-      <a href="/">Schultypografie</a>
+      <article>
+        <h2><a href="/post.html">Weiterer Artikel</a></h2>
+        <time>5. März 2026</time>
+        <p>Kurze Zusammenfassung des Artikels...</p>
+      </article>
+    </main>
+    <!-- Ghost: {{/foreach}} -->
+
+    <!-- Ghost: {{pagination}} -->
+    <nav aria-label="Seitennavigation">
+      <a href="#">← Ältere Beiträge</a>
+      <a href="#">Neuere Beiträge →</a>
     </nav>
-  </header>
 
-  <!-- Ghost: {{#foreach posts}} -->
-  <main>
-    <article>
-      <!-- Ghost: {{#if feature_image}}<img src="{{feature_image}}">{{/if}} -->
-      <h2><a href="/post.html">Titel des Artikels</a></h2><!-- Ghost: {{title}} -->
-      <time>10. März 2026</time><!-- Ghost: {{published_at format="DD. MMMM YYYY"}} -->
-      <p>Kurze Zusammenfassung des Artikels...</p><!-- Ghost: {{excerpt words="30"}} -->
-    </article>
+    <!-- Ghost: {{> footer}} -->
+    <footer>
+      <p>© 2026 Schultypografie</p>
+      <!-- Ghost: {{@site.title}} -->
+    </footer>
 
-    <article>
-      <h2><a href="/post.html">Weiterer Artikel</a></h2>
-      <time>5. März 2026</time>
-      <p>Kurze Zusammenfassung des Artikels...</p>
-    </article>
-  </main>
-  <!-- Ghost: {{/foreach}} -->
-
-  <!-- Ghost: {{pagination}} -->
-  <nav aria-label="Seitennavigation">
-    <a href="#">← Ältere Beiträge</a>
-    <a href="#">Neuere Beiträge →</a>
-  </nav>
-
-  <!-- Ghost: {{> footer}} -->
-  <footer>
-    <p>© 2026 Schultypografie</p><!-- Ghost: {{@site.title}} -->
-  </footer>
-
-  <!-- Ghost: {{ghost_foot}} -->
-  <script type="module" src="/src/js/main.js"></script>
-</body>
-
+    <!-- Ghost: {{ghost_foot}} -->
+    <script
+      type="module"
+      src="/src/js/main.js"
+    ></script>
+  </body>
 </html>

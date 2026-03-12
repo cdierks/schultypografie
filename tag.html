@@ -1,55 +1,63 @@
 <!doctype html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tag: Typografie – Schultypografie</title>
+    <!-- Ghost: {{meta_title}} -->
+    <link
+      rel="stylesheet"
+      href="/src/css/app.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tag: Typografie – Schultypografie</title><!-- Ghost: {{meta_title}} -->
-  <link rel="stylesheet" href="/src/css/app.css" />
-</head>
-
-<body>
-
-  <!-- Ghost: {{> header}} -->
-  <header>
-    <nav>
-      <a href="/">Schultypografie</a>
-    </nav>
-  </header>
-
-  <!-- Ghost: {{#tag}} -->
-  <main>
+  <body>
+    <!-- Ghost: {{> header}} -->
     <header>
-      <h1>Typografie</h1><!-- Ghost: {{name}} -->
-      <p>12 Beiträge</p>
-      <!-- Ghost: {{plural ../pagination.total empty='Keine Beiträge' singular='% Beitrag' plural='% Beiträge'}} -->
+      <nav>
+        <a href="/">Schultypografie</a>
+      </nav>
     </header>
 
-    <!-- Ghost: {{#foreach posts}} -->
-    <div>
-      <article>
-        <h2><a href="/post.html">Artikeltitel</a></h2>
-        <time>10. März 2026</time>
-        <p>Kurze Zusammenfassung...</p>
-      </article>
-    </div>
-    <!-- Ghost: {{/foreach}} -->
+    <!-- Ghost: {{#tag}} -->
+    <main>
+      <header>
+        <h1>Typografie</h1>
+        <!-- Ghost: {{name}} -->
+        <p>12 Beiträge</p>
+        <!-- Ghost: {{plural ../pagination.total empty='Keine Beiträge' singular='% Beitrag' plural='% Beiträge'}} -->
+      </header>
 
-    <!-- Ghost: {{pagination}} -->
-    <nav aria-label="Seitennavigation">
-      <a href="#">← Ältere Beiträge</a>
-      <a href="#">Neuere Beiträge →</a>
-    </nav>
-  </main>
-  <!-- Ghost: {{/tag}} -->
+      <!-- Ghost: {{#foreach posts}} -->
+      <div>
+        <article>
+          <h2><a href="/post.html">Artikeltitel</a></h2>
+          <time>10. März 2026</time>
+          <p>Kurze Zusammenfassung...</p>
+        </article>
+      </div>
+      <!-- Ghost: {{/foreach}} -->
 
-  <!-- Ghost: {{> footer}} -->
-  <footer>
-    <p>© 2026 Schultypografie</p>
-  </footer>
+      <!-- Ghost: {{pagination}} -->
+      <nav aria-label="Seitennavigation">
+        <a href="#">← Ältere Beiträge</a>
+        <a href="#">Neuere Beiträge →</a>
+      </nav>
+    </main>
+    <!-- Ghost: {{/tag}} -->
 
-  <!-- Ghost: {{ghost_foot}} -->
-  <script type="module" src="/src/js/main.js"></script>
-</body>
+    <!-- Ghost: {{> footer}} -->
+    <footer>
+      <p>© 2026 Schultypografie</p>
+    </footer>
 
+    <!-- Ghost: {{ghost_foot}} -->
+    <script
+      type="module"
+      src="/src/js/main.js"
+    ></script>
+  </body>
 </html>

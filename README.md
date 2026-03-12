@@ -18,11 +18,11 @@ Der Dev-Server läuft unter `http://localhost:5173`.
 
 ## Befehle
 
-| Befehl            | Beschreibung                          |
-|-------------------|---------------------------------------|
-| `npm run dev`     | Dev-Server starten                    |
-| `npm run build`   | Produktions-Build nach `dist/`        |
-| `npm run preview` | Build lokal vorschauen                |
+| Befehl            | Beschreibung                   |
+| ----------------- | ------------------------------ |
+| `npm run dev`     | Dev-Server starten             |
+| `npm run build`   | Produktions-Build nach `dist/` |
+| `npm run preview` | Build lokal vorschauen         |
 
 ## Projektstruktur
 
@@ -41,18 +41,19 @@ schultypografie/
 
 ## Ghost-Template-Mapping
 
-| HTML-Datei     | Ghost-Template  | Zweck                        |
-|----------------|-----------------|------------------------------|
-| `index.html`   | `index.hbs`     | Blog-Startseite (Post-Liste) |
-| `post.html`    | `post.hbs`      | Einzelner Artikel            |
-| `page.html`    | `page.hbs`      | Statische Seite              |
-| `tag.html`     | `tag.hbs`       | Tag-Archiv                   |
-| `author.html`  | `author.hbs`    | Autoren-Seite                |
+| HTML-Datei    | Ghost-Template | Zweck                        |
+| ------------- | -------------- | ---------------------------- |
+| `index.html`  | `index.hbs`    | Blog-Startseite (Post-Liste) |
+| `post.html`   | `post.hbs`     | Einzelner Artikel            |
+| `page.html`   | `page.hbs`     | Statische Seite              |
+| `tag.html`    | `tag.hbs`      | Tag-Archiv                   |
+| `author.html` | `author.hbs`   | Autoren-Seite                |
 
 Ghost-Handlebars-Entsprechungen sind als HTML-Kommentare inline dokumentiert:
 
 ```html
-<h1>Artikeltitel</h1><!-- Ghost: {{title}} -->
+<h1>Artikeltitel</h1>
+<!-- Ghost: {{title}} -->
 ```
 
 ## Ghost-Portierung
