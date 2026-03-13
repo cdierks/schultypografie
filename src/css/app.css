@@ -414,4 +414,24 @@
   .section-head__link:hover {
     color: var(--color-accent);
   }
+
+  /* Meta-Elements */
+  .rubrik {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: var(--text-ui-sm);
+    font-weight: 600;
+    letter-spacing: var(--tracking-caps);
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: var(--space-2);
+  }
+  .meta-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    font-family: var(--font-ui);
+    font-size: var(--text-ui-md);
+    color: var(--color-text-muted);
+  }
 }
