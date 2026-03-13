@@ -5,19 +5,53 @@
 
 @theme {
   /* Colors */
-  --color-surface:        oklch(0.98 0.002 60);    /* warmes Off-White */
-  --color-surface-raised: oklch(0.95 0.002 60);    /* Karten-Hintergrund */
-  --color-surface-dark:   oklch(0.14 0.005 60);    /* dunkle Hero-Zone */
-  --color-surface-ink:    oklch(0.10 0.005 60);    /* fast Schwarz */
+  --color-surface: oklch(0.98 0.002 60); /* warmes Off-White */
+  --color-surface-raised: oklch(0.95 0.002 60); /* Karten-Hintergrund */
+  --color-surface-dark: oklch(0.14 0.005 60); /* dunkle Hero-Zone */
+  --color-surface-ink: oklch(0.1 0.005 60); /* fast Schwarz */
 
-  --color-text:           oklch(0.12 0.005 60);    /* Lesetext */
-  --color-text-muted:     oklch(0.50 0.005 60);    /* Metadaten */
-  --color-text-light:     oklch(0.97 0.002 60);    /* Text auf Dunkel */
+  --color-text: oklch(0.12 0.005 60); /* Lesetext */
+  --color-text-muted: oklch(0.5 0.005 60); /* Metadaten */
+  --color-text-light: oklch(0.97 0.002 60); /* Text auf Dunkel */
 
-  --color-accent:         oklch(0.45 0.22 27);     /* #E20613 Rot */
-  --color-accent-hover:   oklch(0.38 0.22 27);     /* dunkler */
-  --color-accent-subtle:  oklch(0.95 0.04 27);     /* blasses Rot */
+  --color-accent: oklch(0.45 0.22 27); /* #E20613 Rot */
+  --color-accent-hover: oklch(0.38 0.22 27); /* dunkler */
+  --color-accent-subtle: oklch(0.95 0.04 27); /* blasses Rot */
 
-  --color-border:         oklch(0.88 0.003 60);    /* Standardlinie */
-  --color-border-strong:  oklch(0.70 0.005 60);    /* Hover/Fokus */
+  --color-border: oklch(0.88 0.003 60); /* Standardlinie */
+  --color-border-strong: oklch(0.7 0.005 60); /* Hover/Fokus */
+
+  /* Fonts */
+  --font-display: Inter, sans-serif;
+  --font-body: 'Source Serif 4', serif;
+  --font-ui: Inter, sans-serif; /* Typografie-Scale — Display (Headlines, große Elemente) */
+  --text-display-xl: 4.5rem; /* 72px — Seitentitel, Hero-Headline */
+  --text-display-lg: 3rem; /* 48px — Featured Post Headline */
+  --text-display-md: 2.25rem; /* 36px — Artikel-Headline */
+  --text-display-sm: 1.75rem; /* 28px — Abschnittstitel, H2 in Artikel */
+  --text-display-xs: 1.375rem; /* 22px — Kartenheadline, H3 */
+
+  /* Typografie-Scale — Text (Fließtext, UI) */
+  --text-body-lg: 1.25rem; /* 20px — Lead / Einleitungstext */
+  --text-body-md: 1.0625rem; /* 17px — Standardfließtext */
+  --text-body-sm: 0.9375rem; /* 15px — Kompakter Fließtext */
+  --text-ui-md: 0.875rem; /* 14px — Navigation, Metadaten, Labels */
+  --text-ui-sm: 0.75rem; /* 12px — Badges, Tags, Captions */
+
+  /* Zeilenhöhen */
+  --leading-display: 1.05; /* Sehr eng für große Headlines */
+  --leading-headline: 1.2; /* Kompakte Artikeltitel */
+  --leading-body: 1.7; /* Entspannt für Fließtext (Serif) */
+  --leading-ui: 1.4; /* Navigation, Karten, UI */
+
+  /* Buchstabenabstand */
+  --tracking-display: -0.03em; /* Negativer Tracking für große Headlines */
+  --tracking-headline: -0.01em; /* Leicht eng für Titel */
+  --tracking-caps: 0.08em; /* Für Rubriken / Kategorie-Labels in caps */
+  --tracking-normal: 0em;
+
+  /* Textbreiten */
+  --measure-text: 65ch; /* Optimale Lesebreite Fließtext */
+  --measure-wide: 80ch; /* Breitere Textspalte (Lead etc.) */
+  --measure-narrow: 45ch; /* Enge Spalte (Sidebar, Caption) */
 }
