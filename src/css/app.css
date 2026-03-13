@@ -139,17 +139,19 @@
     font-weight: 600;
   }
 
-  /* Radius */
-  --radius-sm: 2px;
-  --radius-md: 4px;
-  --radius-lg: 8px;
+  :root {
+    /* Radius */
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --radius-lg: 8px;
 
-  /* Border-Stärken */
-  --border-thin: 1px;
-  --border-medium: 2px;
+    /* Border-Stärken */
+    --border-thin: 1px;
+    --border-medium: 2px;
 
-  /* Schatten — nur ein einziger, sehr dezent */
-  --shadow-card: 0 1px 3px oklch(0.15 0.03 255 / 0.08), 0 1px 2px oklch(0.15 0.03 255 / 0.06);
+    /* Schatten — nur ein einziger, sehr dezent */
+    --shadow-card: 0 1px 3px oklch(0.15 0.03 255 / 0.08), 0 1px 2px oklch(0.15 0.03 255 / 0.06);
+  }
 
   /* Ghost Base Styles */
   .gh-content {
@@ -168,11 +170,11 @@
   }
 
   /* Lead-Absatz: erster Absatz im Artikel, etwas größer */
-  .gh-content p:first-of-type {
+  /*  .gh-content p:first-of-type {
     font-size: var(--text-body-lg);
     font-weight: 300;
     line-height: 1.55;
-  }
+  } */
 
   .gh-content h2 {
     font-size: var(--text-display-sm);
@@ -267,5 +269,47 @@
     border: none;
     border-top: 1px solid var(--color-border);
     margin: var(--space-12) 0;
+  }
+
+}
+
+/* Structural Wrappers */
+@layer components {
+  /* Äußerer Seitencontainer — für die volle Seitenbreite */
+  .site-shell {
+    max-width: var(--container-site);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-page-x);
+    padding-right: var(--space-page-x);
+  }
+
+  /* Inhaltscontainer — für Übersichten, Archive */
+  .content-shell {
+    max-width: var(--container-content);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-page-x);
+    padding-right: var(--space-page-x);
+  }
+
+  /* Textspalte — für Artikelseiten */
+  .text-shell {
+    max-width: var(--container-text);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-page-x);
+    padding-right: var(--space-page-x);
+  }
+
+  /* Sektionsabstände */
+  .section-frame {
+    padding-top: var(--space-section);
+    padding-bottom: var(--space-section);
+  }
+
+  .section-frame--tight {
+    padding-top: var(--space-section-tight);
+    padding-bottom: var(--space-section-tight);
   }
 }
