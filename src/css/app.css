@@ -270,7 +270,6 @@
     border-top: 1px solid var(--color-border);
     margin: var(--space-12) 0;
   }
-
 }
 
 /* Structural Wrappers */
@@ -311,5 +310,51 @@
   .section-frame--tight {
     padding-top: var(--space-section-tight);
     padding-bottom: var(--space-section-tight);
+  }
+
+  /* Sticky Site Header */
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+  }
+
+  .site-header__logo {
+    font-family: var(--font-display);
+    font-size: var(--text-ui-md);
+    font-weight: 700;
+    letter-spacing: var(--tracking-caps);
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .site-nav__link {
+    font-family: var(--font-ui);
+    font-size: var(--text-ui-md);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    letter-spacing: var(--tracking-caps);
+    text-transform: uppercase;
+    transition: color 0.15s ease;
+  }
+
+  .site-nav__link:hover {
+    color: var(--color-text);
   }
 }
